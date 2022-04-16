@@ -1,0 +1,46 @@
+[
+  {
+    "title": "What The full name of HTML ?",
+    "answer_1": "Hyper Text Make Line",
+    "answer_2": "Hyper Text Mole Laguage",
+    "correct_answer": "Hyper Text Markup Language",
+    "answer_4": "Hyper Text Referanse Line"
+    
+  },
+  {
+    "title": "What The full name of Json ?",
+    "answer_1": "javascript sainse on ",
+    "correct_answer": "Javascript Object Notation",
+    "answer_3": "Javascript on file",
+    "answer_4": "none all above",
+    "answer_5": "none all above"
+  },
+  {
+    "title": "Any of this language work in backend ?",
+    "answer_1": "HTML",
+    "answer_2": "Vue.js",
+    "answer_3": "Gulp",
+    "correct_answer": "PHP"
+  },
+  {
+    "title": "Python work in :",
+    "answer_1": "Front-End",
+    "answer_2": "Full-Stack",
+    "correct_answer": "Back-End",
+    "answer_4": "API"
+  },
+  {
+    "title": "React is:",
+    "answer_1": "Frame Work of Python",
+    "correct_answer": "Frame Work in Javascript",
+    "answer_3": "neative language",
+    "answer_4": "programming language"
+  },
+  {
+    "title": "Finish:",
+    "answer_1": "Done",
+    "correct_answer": "Done",
+    "answer_3": "Done",
+    "answer_4": "Done"
+  }
+]

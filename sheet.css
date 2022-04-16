@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(160deg, #fff 30% , rgb(0, 137, 179) 70% )
+}
+
+.border{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 7px;
+  background-color: rgb(0, 137, 179);
+  transition: .3s;
+}
+.quiz-app {
+  position: relative;
+  width: 1000px;
+  background-image: url(./vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg);
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.quiz-app .quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quiz-app .quiz h2{
+  text-align: center;
+  color: #fff;
+}
+.quiz-app .quiz .answer {
+  padding: 30px 0;
+}
+.quiz-app .quiz .quiztion-number{
+  color: #fff;
+}
+.quiz-app .quiz .answer .ans {
+  display: flex;
+  height: 70px;
+  width: 500px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .2s;
+  box-shadow: 0px 3px 6px rgb(80, 80, 80);
+}
+.quiz-app .quiz .answer .ans .bullet {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: rgb(0, 137, 179);
+  color:  #fff;
+  text-align: center;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.quiz-app .quiz .answer .ans label{
+ margin-left: 10px;
+}
+
+.quiz-app .quiz .answer .ans.active{
+  background-color:rgb(0, 137, 179) ;
+  color: #fff;
+}
+.quiz-app .quiz .answer .ans.active .bullet{
+  background-color: rgb(2, 2, 104);
+  color: #fff;
+}
+
+
+.quiz-app .quiz button {
+  padding: 7px 10px;
+  background: rgb(0, 166, 255);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.timer{
+  color: #fff;
+  background-color: rgb(0, 137, 179);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 0 15px 15px ;
+}
+
+.popup-c {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  height: 200px;
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 137, 179);
+  animation: popup-scale .5s forwards;
+}
+
+.popup div span:first-of-type{
+    padding-right: 15px;
+    color: green;
+}
+.popup div {
+  color: #fff;
+  font-size: 25px;
+}
+.popup div span:last-of-type{
+    padding-left: 15px;
+    color: blue;
+}
+.popup button{
+    margin-top: 30px;
+    padding: 10px 20px ;
+    cursor: pointer;
+    background: rgb(0, 166, 255);
+    border: 0;
+    color: #fff;
+
+}
+
+.quiz-app .timer{
+ align-self: center;
+ font-weight: bold;
+} 
+
+@keyframes popup-scale{
+  to{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
